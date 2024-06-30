@@ -14,6 +14,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+//ADD COMMENTS LATER
 
 @WebServlet(name = "ImageFinder", urlPatterns = { "/main" })
 public class ImageFinder extends HttpServlet {
