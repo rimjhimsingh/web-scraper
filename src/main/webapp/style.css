@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    height: 100vh; /* Full viewport height */
+    font-family: "Sono", sans-serif;
+    place-items: center; /* Centers content in the grid */
+  }
+  
+  header {
+    background-color: antiquewhite;
+    padding: 10px 20px;  /* Ensure padding to match the reference */
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+   
+}
+nav {
+  font-size: small;
+  background-color: #f0ed3960; /* Lighter background for the nav bar */
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;            /* Full width to align with the header */
+  display: flex;          /* Use flex to evenly space links */
+  justify-content: center; /* Center the navigation links */
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 15px;
+}
+
+  
+  .container {
+    margin:0;
+    margin-top: 50px;
+    display: grid;
+    gap: 2rem;
+    width: 80%; /* Adjust based on preference */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content); /* Adapts to content size */
+    justify-content: center; /* Center grid items horizontally */
+    align-content: center; /* Center grid items vertically */
+    border-radius: 25px;
+    padding-bottom: 50px;
+  }
+  
+  .how, .backend, .important {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(187, 231, 130);
+    width: 100%;
+  }
+  
+  .backend {
+    background-color: rgb(196, 195, 247);
+  }
+  
+  .important {
+    background-color: rgb(233, 119, 119);
+  }
+  
+  

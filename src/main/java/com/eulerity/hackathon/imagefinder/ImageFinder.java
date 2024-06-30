@@ -108,7 +108,11 @@ public class ImageFinder extends HttpServlet {
 
 	private void followLinks(Document doc, int depth, HashSet<String> visited, ArrayList<String> testImages, HashSet<String> imageSet, String startDomain) {
 		Elements links = doc.select("a[href]");
+        int count=0;
 		for (Element link : links) {
+            if (count >= 5) { // Limit to the first 10 links
+                break; // Stop processing more links if 10 have been processed
+            }
 			String nextLink = link.absUrl("href");
 			if (nextLink.startsWith("mailto:")) {
 				continue; // Skip mailto links
@@ -120,6 +124,7 @@ public class ImageFinder extends HttpServlet {
 				String nextLinkDomain = getDomainName(nextLink);
 				if (!visited.contains(nextLink) && nextLinkDomain.equals(startDomain)) {
 					crawl(nextLink, depth + 1, visited, testImages, imageSet, startDomain);
+                    count++;
 				}
 			} catch (URISyntaxException e) {
 				System.err.println("Error parsing URL: " + nextLink);
