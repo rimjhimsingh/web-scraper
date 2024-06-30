@@ -30,11 +30,14 @@ public class ImageFinder extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         setResponseHeaders(resp);
         String url = validateRequest(req, resp);
+        testImages.clear();
+        imageSet.clear();
+        visited.clear();
         if (url == null) return;
         String startDomain;
         try {
             startDomain = getDomainName(url);
-			System.out.println(startDomain + "+++++++++++++++++++++++++++");
+			
         } catch (URISyntaxException e) {
             resp.getWriter().print(GSON.toJson("Invalid URL"));
             return;
