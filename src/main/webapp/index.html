@@ -21,6 +21,7 @@
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
+        background-color: #f8f8d7;
         background-image: url("https://www.eulerity.com/static/Stars-10f2e7c6ab7ae286c1c23d3968650b9d.gif");
         font-family: "Sono", sans-serif;
       }
@@ -28,11 +29,11 @@
         background-color: antiquewhite;
         padding: 10px 20px;
         text-align: center;
-        justify-content: space-between; 
+        justify-content: space-between;
       }
       nav {
         font-size: small;
-        background-color: #f0ed3960; 
+        background-color: #f0ed3960;
         padding: 10px 0;
         text-align: center;
       }
@@ -78,26 +79,85 @@
 
         font-weight: lighter;
       }
+      /* Enhanced Form Styling */
       .form {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 20px;
-        font-size: smaller;
+        width: 80%; /* Set a width for the form */
+        max-width: 500px; /* Maximum width for larger screens */
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
       }
+
       .input {
-        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      button {
-        margin-top: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+
+      .input label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
       }
-      button:hover {
-        background-color: #f1f1f1;
+
+      .input input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
       }
+
+      .input input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      .button {
+        --b: 3px; 
+        --s: 0.45em;
+        --color: #373b44;
+        margin: 30px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: var(--color);
+        background: conic-gradient(
+            from 90deg at var(--b) var(--b),
+            #0000 90deg,
+            var(--color) 0
+          )
+          var(--s) var(--s) / calc(100% - var(--b) - 2 * var(--s))
+          calc(100% - var(--b) - 2 * var(--s));
+        transition: 0.3s linear, color 0s, background-color 0s;
+        outline: var(--b) solid transparent;
+        outline-offset: 0.6em;
+        font-size: 16px;
+        border: 0;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        --s: 0px;
+        outline-color: var(--color);
+        outline-offset: 0.05em;
+      }
+
+      .button:active {
+        background: var(--color);
+        color: #fff;
+      }
+
       footer {
         background-color: antiquewhite;
         font-size: 0.8em;
@@ -156,7 +216,7 @@
               required
             />
           </form>
-          <button type="button">Submit!</button>
+          <button type="button" class="button">Submit!</button>
         </div>
         <div id="loading">Loading Images from your favourite Website!</div>
         <div class="output">
