@@ -1,13 +1,20 @@
 Please paste your list of test URLs below:
-https://www.timessquarenyc.org/
 https://www.binghamton.edu/
 https://www.eulerity.com/
-https://github.com/
 https://www.astronomy.com/
+https://design.google/
+https://github.com/
 https://www.nasa.gov/
-https://en.wikipedia.org/wiki/Main_Page
 https://www.notion.so/
 https://www.forbes.com/
+https://www.timessquarenyc.org/
 https://www.chase.com/
 https://www.vsauce.com/#/
-https://www.miniso.com/
+https://en.wikipedia.org/wiki/Main_Page
+https://www.celebheights.com/
+https://www.allrecipes.com/
+https://www.apple.com/
+https://www.yamahaboats.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://css-tricks.com/snippets/css/typewriter-effect/
+https://90s.myretrotvs.com/

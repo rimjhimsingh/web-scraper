@@ -1,48 +1,82 @@
 html {
-    background-color: rgb(255, 254, 234);
-    font-family: "Noto Sans", sans-serif;
-    color: #333; /* Dark gray for better readability */
-    line-height: 1.6;
-  }
-  header {
-    background-color: #f0f0f0; /* Light gray background for the header */
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  h1 {
-    color: rgb(102, 79, 44);
-    margin-bottom: 0; /* Removes default margin */
-  }
-  h3 {
-    background-color: rgba(209, 207, 162, 0.466);
-    color: rgb(102, 79, 44);
-    padding: 10px;
-    margin-top: 20px; /* Adds spacing between sections */
-    margin-bottom: 10px;
-  }
-  .section {
-    padding: 0 20px;
-  }
-  p, li {
-    text-align: justify; /* Ensures text is evenly justified */
-    margin-bottom: 10px;
-  }
-  ol {
-    padding-left: 20px; /* Proper indentation for list */
-  }
-  li {
-    margin-bottom: 5px; /* Adds a little space below each list item */
-  }
-  .list-heading {
-    font-weight: bold;
-    
-  }
-  .list-points {
-    font-weight: normal;
-  }
-  #skills{
-      color:black;
-      text-align:justify;
-  }
-  
+  background-color: rgb(255, 254, 234);
+  font-family: "Noto Sans", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 {
+  color: rgb(102, 79, 44);
+  margin-bottom: 0;
+}
+h3 {
+  background-color: rgba(209, 207, 162, 0.466);
+  color: rgb(102, 79, 44);
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.section {
+  padding: 0 20px;
+}
+p,
+li {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+ol {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 5px;
+}
+.list-heading {
+  font-weight: bold;
+}
+.list-points {
+  font-weight: normal;
+}
+#skills {
+  color: black;
+  text-align: justify;
+}
+header {
+  background-color: rgba(209, 207, 162, 0.466);
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h1 {
+  color: rgb(102, 79, 44);
+  margin-bottom: 0;
+  display: inline;
+  text-align: left;
+}
+
+.top-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.index-button {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.index-button:hover {
+  background-color: rgb(231, 213, 187);
+}
